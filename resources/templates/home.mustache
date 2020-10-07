@@ -1,0 +1,13 @@
+{{>header}}
+
+  {{^result}}
+    <p>Make an API request</p>
+    {{>api_request_form}}
+  {{/result}}
+
+  {{#result}}
+    <a href="/">Make a new request</a>
+    {{>api_request_result}}
+  {{/result}}
+
+{{>footer}}

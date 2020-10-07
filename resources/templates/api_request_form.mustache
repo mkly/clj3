@@ -1,0 +1,8 @@
+<form method="post" action="/api-request">
+  <div class="form-group">
+    <label for="api-uri">URI</label>
+    <input class="input-block" type="text" name="api-uri"/>
+  </div>
+  {{#anti-forgery-field}}{{/anti-forgery-field}}
+  <button type="submit">Make Request</button>
+</form>
